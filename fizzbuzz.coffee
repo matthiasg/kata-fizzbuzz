@@ -1,2 +1,2 @@
 module.exports.generate = () ->
-	i for i in [1..100]
+	i.toString() for i in [1..100]

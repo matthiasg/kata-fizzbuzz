@@ -1,9 +1,15 @@
-expect = require('chai').expect
+require('chai').should()
 
 fizzbuzz = require('../fizzbuzz')
 
 describe 'kata-fizzBuzz', ->
 
+    seq = null
+
+    beforeEach ()->
+        seq = fizzbuzz.generate()
+
     it 'should output an array with 100 elements', ()->
-        result = fizzbuzz.generate()
-        expect(result).to.have.length(100)
+        seq.should.have.length(100)
+
+    

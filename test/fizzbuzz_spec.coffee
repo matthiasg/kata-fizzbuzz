@@ -19,7 +19,7 @@ describe 'kata-fizzBuzz', ->
         seq[2].should.equal("Fizz")
 
     it 'should output "Buzz" for the number 5', ()->
-        seq[2].should.equal("Buzz")
+        seq[4].should.equal("Buzz")
 
     it.skip 'should output "Buzz" for the last entry', ()->
         seq[99].should.equal("Buzz")

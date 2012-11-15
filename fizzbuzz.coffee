@@ -4,6 +4,8 @@ module.exports.generate = () ->
 fizzBuzz = (number)->
 	if(isEvenlyDivisibleBy(number,3))
 		return "Fizz"
+	else if(isEvenlyDivisibleBy(number,5))
+		return "Buzz"
 	else
 		return number.toString()
 

@@ -1,0 +1,4 @@
+--compilers coffee:coffee-script
+-R spec
+--timeout 10000
+--growl

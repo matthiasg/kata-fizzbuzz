@@ -36,6 +36,9 @@ describe 'kata-fizzBuzz', ->
     it 'should output "Fizz" for the entry #93', ()->
         item(93).should.equal("Fizz") 
 
+    it.skip 'should output all values', () ->
+        console.log( sequence )
+
     item = (oneBasedIndex) ->
         zeroBasedIndex = oneBasedIndex-1
         return sequence[zeroBasedIndex]

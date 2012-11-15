@@ -4,22 +4,27 @@ fizzbuzz = require('../fizzbuzz')
 
 describe 'kata-fizzBuzz', ->
 
-    seq = null
+    sequence = null
 
     beforeEach ()->
-        seq = fizzbuzz.generate()
+        sequence = fizzbuzz.generate()
 
     it 'should output an array with 100 elements', ()->
-        seq.should.have.length(100)
+        sequence.should.have.length(100)
 
     it 'should output "1" for the first entry', ()->
-        seq[0].should.equal("1")
+        item(1).should.equal("1")
 
     it 'should output "Fizz" for the number 3', ()->
-        seq[2].should.equal("Fizz")
+        item(3).should.equal("Fizz")
 
     it 'should output "Buzz" for the number 5', ()->
-        seq[4].should.equal("Buzz")
+        item(5).should.equal("Buzz")
 
     it.skip 'should output "Buzz" for the last entry', ()->
-        seq[99].should.equal("Buzz")
+        item(100).should.equal("Buzz")
+
+
+    item = (oneBasedIndex) ->
+        zeroBasedIndex = oneBasedIndex-1
+        return sequence[zeroBasedIndex]

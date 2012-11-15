@@ -17,3 +17,12 @@ describe 'kata-fizzBuzz', ->
 
     it 'should output "Fizz" for the number 3', ()->
         seq[2].should.equal("Fizz")
+
+    ###
+    it 'should output "Fizz" for the number 3', ()->
+        seq[2].should.equal("Fizz")
+
+    it 'should output "Buzz" for the last entry', ()->
+        seq[99].should.equal("Buzz")
+
+    ###
